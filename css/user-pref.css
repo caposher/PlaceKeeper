@@ -1,0 +1,30 @@
+header {
+  height: 25vh;
+  background-color: hsl(230, 100%, 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 4rem;
+  /* color: white; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+  display: flex;
+  /* flex-direction: column; */
+  background-color: #758af0;
+  height: 100vh;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  margin: 15px 0px;
+  padding: 10px;
+}
+
+/* .prefer-color {
+} */

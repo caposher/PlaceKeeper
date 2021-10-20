@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/user-pref.css" />
+    <title>User preference</title>
+  </head>
+  <body onload="onInit()">
+    <header>
+      <h2>User preference</h2>
+    </header>
+    <main>
+      <form id="user-pref" onsubmit="onSubmit(event)">
+        <label>Select color: <input class="prefer-color" type="color" name="color" /></label><br />
+        <label>Set birth date: <input class="birth-date" type="date" name="date" /></label><br />
+        <label>Set birth time: <input class="birth-time" type="time" name="time" /></label><br />
+        <label>Email: <input class="email" type="email" name="email" /></label><br />
+        <label
+          >Age:
+          <input
+            class="age-range"
+            type="range"
+            name="range"
+            min="18"
+            max="120"
+            value="18"
+            oninput="onAgeRange(this.value)" /></label
+        ><span class="age-display">18</span><br />
+        <button>save changes</button>
+      </form>
+    </main>
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/userPref.service.js"></script>
+    <script src="js/user-pref.js"></script>
+  </body>
+</html>
